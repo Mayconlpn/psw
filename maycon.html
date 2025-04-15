@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Portfólio - Maycon Lyan</title>
+    <link rel="stylesheet" href="maycon.css">
+    
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="menu-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="davy.html">Davy</a></li>
+                <li><a href="maycon.html">Maycon</a></li>
+                <li><a href="yuri.html">Yuri</a></li>
+            </ul>
+        </div>
+        <div class="menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+    <div class="secao-principal">
+        <div class="header-foto">
+            
+            <img src="WhatsApp Image 2025-03-18 at 15.07.04 (1).jpeg" height="150" width="150" class="profile-img">
+        </div>
+        <div>
+            <h1>Maycon Lyan</h1>
+            <p>Desenvolvedor de Software | Engenheiro de Software</p>
+        </div>
+    </div>
+    
+    <nav>
+        <ul>
+           
+            <li><a href="index.html" class="btn">Início</a></li>
+            
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <section>
+            <h2>Sobre Mim</h2>
+            <p>Sou um profissional da área de tecnologia da informação, formado em Engenharia de Software e Técnico em Informática, buscando oportunidade para atuar no desenvolvimento de software, análise de sistemas ou suporte técnico.</p>
+        </section>
+        
+        <section>
+            <h2>Habilidades Técnicas</h2>
+            <ul>
+                <li>Java, Python, JavaScript, C#</li>
+                <li>MySQL, PostgreSQL, MongoDB</li>
+                <li>HTML, CSS, React, Angular</li>
+                <li>Scrum, Kanban</li>
+                <li>Git, Docker, AWS</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Projetos</h2>
+            <div class="projeto">
+                <h3>Sistema Web para Gestão de Estoque</h3>
+                <p>Projeto acadêmico utilizando React, Node.js e PostgreSQL para controle de estoque de supermercados.</p>
+            </div>
+            <div class="projeto">
+                <h3>Automação de Processos com Python</h3>
+                <p>Criação de scripts para automação de tarefas administrativas, reduzindo tempo de execução em 40%.</p>
+            </div>
+        </section>
+        
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Email: <a href="mailto:mayconlpn@gmail.com" onmouseover="mudarCorLink(this)" onmouseout="restaurarCorLink(this)">mayconlpn@gmail.com</a></p>
+            <p>Telefone: <a href="tel:+5577991085187" onmouseover="mudarCorLink(this)" onmouseout="restaurarCorLink(this)"> (77)991085187</a></p>
+    
+            <!-- Formulário de Contato -->
+            <h3>Envie sua mensagem</h3>
+            <form onsubmit="return validarFormulario()">
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" required><br><br>
+    
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+    
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea><br><br>
+    
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Maycon Lyan Pereira Nogueira. Todos os direitos reservados.</p>
+    </footer>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

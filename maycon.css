@@ -1,0 +1,361 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(liquid-marbling-paint-texture-background-fluid-painting-abstract-texture-intensive-color-mix-wallpaper.jpg);
+    color: #333;
+    height: 100%;
+}
+
+.secao-principal {
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+    font-size: 1.5em;   
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo no eixo horizontal */
+    justify-content: center; /* Centraliza o conteúdo no eixo vertical */
+    background-size: cover;
+    background-position: center;
+}
+
+.header-foto {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px; /* Espaço entre a imagem e o texto */
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /*deixar a imagem redonda*/
+    object-fit: cover;
+    border: 5px solid #3498db; /* Cor e espessura da borda */
+}
+
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+/* Estilos de navegação e outros elementos do site */
+nav {
+    background: #757779;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+li{
+    list-style-type: none;
+
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+nav ul li a:hover {
+    color: #fff;
+}
+
+/* Estilos de seções e footer */
+section {
+    padding: 20px;
+    margin: 20px;
+    background: #f3f7fb;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: color 0.3s ease, transform 0.7s ease;
+}
+
+.projeto {
+    background: #e3f2fd;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #00ff08;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+button {
+    transition: color 0.3s ease, transform 0.7s ease;
+}
+
+section:hover {
+    transform: scale(1.06);
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #c5c5c5;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.7s ease;
+}
+
+.btn:hover {
+    background-color: rgb(130, 128, 128);
+}
+
+.cabecalho{
+    background-color: #333;
+}
+/* Menu Hambúrguer */
+.menu {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    z-index: 999;
+    cursor: pointer;
+}
+
+
+.menu i{
+    width:20px;
+    height: 20px;
+    border-radius: 50%;
+    color: #fff;
+}
+.menu i:hover{
+    color:aqua
+}
+
+/* Estilização dos links */
+
+.menu-links{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.menu-links ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.menu-links a{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+.menu-links a:hover{
+    color: aqua;
+}
+
+/* Telas até 768px — Tablets */
+@media (max-width: 768px) {
+    .secao-principal {
+      font-size: 1.2em;
+      padding: 40px;
+    }
+  
+    .profile-img {
+      width: 120px;
+      height: 120px;
+    }
+  
+    nav ul li {
+      margin: 0 10px;
+    }
+  
+    nav ul li a {
+      font-size: 24px;
+    }
+  
+    section {
+      margin: 15px;
+      padding: 15px;
+    }
+  
+    .menu-links ul {
+      gap: 20px;
+    }
+  }
+  
+  /* Telas até 600px — Smartphones comuns */
+  @media (max-width: 600px) {
+    .secao-principal {
+      font-size: 1em;
+      padding: 30px;
+    }
+  
+    h1 {
+      font-size: 1.6em;
+    }
+  
+    p {
+      font-size: 1em;
+    }
+  
+    .profile-img {
+      width: 100px;
+      height: 100px;
+    }
+  
+    nav ul {
+      padding: 0;
+    }
+  
+    nav ul li {
+      display: block;
+      margin: 10px 0;
+    }
+  
+    nav ul li a {
+      font-size: 20px;
+    }
+  
+    .menu-links ul {
+      display: none;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .abrir .menu-links ul{
+        display: flex;
+    }
+  
+    .menu {
+      top: 10px;
+      left: 10px;
+    }
+  
+    section {
+      margin: 10px;
+      padding: 12px;
+    }
+  
+    button,
+    .btn {
+      padding: 8px 16px;
+      font-size: 0.9em;
+    }
+  }
+  
+  /* Telas até 480px — Smartphones menores */
+  @media (max-width: 480px) {
+    .secao-principal {
+      font-size: 0.95em;
+      padding: 25px;
+    }
+  
+    h1 {
+      font-size: 1.4em;
+    }
+  
+    p {
+      font-size: 0.95em;
+    }
+  
+    .profile-img {
+      width: 80px;
+      height: 80px;
+    }
+  
+    nav ul li a {
+      font-size: 18px;
+    }
+  
+    button,
+    .btn {
+      font-size: 0.85em;
+      padding: 8px 14px;
+    }
+  
+    section {
+      padding: 10px;
+      margin: 8px;
+    }
+  
+    .menu-links a {
+      font-size: 16px;
+    }
+  }
+  
+  /* Telas até 300px — Dispositivos muito pequenos */
+  @media (max-width: 300px) {
+    .secao-principal {
+      font-size: 0.8em;
+      padding: 20px;
+    }
+  
+    h1 {
+      font-size: 1.2em;
+    }
+  
+    p {
+      font-size: 0.85em;
+    }
+  
+    .profile-img {
+      width: 60px;
+      height: 60px;
+    }
+  
+    button,
+    .btn {
+      font-size: 0.75em;
+      padding: 6px 12px;
+    }
+  
+    .menu i {
+      width: 16px;
+      height: 16px;
+    }
+  
+    .menu-links a {
+      font-size: 14px;
+    }
+  
+    nav ul li a {
+      font-size: 16px;
+    }
+  }
+  

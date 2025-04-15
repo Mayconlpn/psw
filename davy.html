@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>portfólio</title>
+    <link rel="stylesheet" href="davy.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="menu-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="davy.html">Davy</a></li>
+                <li><a href="maycon.html">Maycon</a></li>
+                <li><a href="yuri.html">Yuri</a></li>
+            </ul>
+        </div>
+        <div class="menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <div class="secao-principal">
+        <div class="header-foto">
+            
+            <img src="WhatsApp Image 2025-03-18 at 15.13.22.jpeg" height="150" width="150" class="profile-img">
+        </div>
+        <div>
+            <h1>Davy Almeida</h1>
+            <p>Técnico em Informática para Internet</p>
+        </div>
+    </div>
+
+    <nav>
+      
+        <ul>
+            <li><a href="index.html" class="btn">Início</a></li>
+       
+        </ul>
+    
+    </nav>
+
+    <div class="container">
+        <section>
+            <h2>Sobre Mim</h2>
+            <p>Sou técnico em informática especializado em soluções para internet. Tenho experiência no diagnóstico e reparo de computadores, além de oferecer suporte em redes e sistemas conectados à web. Minha formação inclui conhecimentos em manutenção de hardware, instalação de softwares e otimização de desempenho, com foco em proporcionar um serviço eficiente e de qualidade para garantir a melhor experiência online aos meus clientes.</p>
+        </section>
+    
+        <section>
+            <h2>Habilidades Técnicas</h2>
+            <ul>
+                <li>Manutenção de Hardware</li>
+                <li>Sistemas Operacionais</li>
+                <li>Redes de Computadores</li>
+                <li>Diagnóstico e Solução de Problemas</li>
+                <li>Desenvolvimento e Manutenção de Websites</li>
+                <li>Segurança de Redes</li>
+            </ul>
+        </section>
+    
+        <section>
+            <h2>Projeto</h2>
+            <div class="projeto">
+                <h3>Implementação de Rede Local e Conexão Segura à Internet</h3>
+                <p>Tem como objetivo montar e configurar uma rede local eficiente e segura para os funcionários de uma empresa, garantindo uma conexão estável à internet, integração de dispositivos e segurança de dados.</p>
+            </div>
+        </section>
+    
+    
+    
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Email: <a href="mailto:davyalmeida2008@gmail.com" onmouseover="mudarCorLink(this)" onmouseout="restaurarCorLink(this)">davyalmeida2008@gmail.com</a></p>
+            <p>Telefone: <a href="tel:+5538998967810" onmouseover="mudarCorLink(this)" onmouseout="restaurarCorLink(this)"> (38)998967810</a></p>
+    
+            <!-- Formulário de Contato -->
+            <h3>Envie sua mensagem</h3>
+            <form onsubmit="return validarFormulario()">
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" required><br><br>
+    
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+    
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea><br><br>
+    
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    
+    </div>
+    <footer>
+        <p>&copy; 2025 Davy Henguel N.A Almeida. Todos os direitos reservados.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,242 @@
+
+body {
+
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image:url(liquid-marbling-paint-texture-background-fluid-painting-abstract-texture-intensive-color-mix-wallpaper.jpg);
+    background-position: center;background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    color:white;
+    
+}
+ 
+
+    
+
+h2{
+color: black;
+}
+
+
+.secao-principal{
+    text-align: center;
+    background-position: center;background-size: cover;
+    background-position: center;
+}
+
+.secao-principal h1 {
+    font-size: 4em;
+}
+
+.secao-principal {
+    font-size: 2.0em;
+    color:white;
+
+}
+
+
+.pessoas {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 50px;
+    gap: 30px;
+}
+
+.pessoa {
+    background-color:#e3f2fd;
+    border: 1px solid rgb(247, 241, 241);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+    padding: 50px;
+    transition: transform 0.3s ease;
+}
+
+.pessoa:hover {
+    transform: scale(1.05);
+}
+
+
+.pessoa h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.pessoa p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #00ff08;
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+    margin-top: 20px;
+}
+.cabecalho{
+    background-color: #333;
+}
+/* Menu Hambúrguer */
+.menu {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    z-index: 999;
+    cursor: pointer;
+}
+
+
+.menu i{
+    width:20px;
+    height: 20px;
+    border-radius: 50%;
+    color: #fff;
+}
+.menu i:hover{
+    color:aqua
+}
+
+/* Estilização dos links */
+
+.menu-links{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.menu-links ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.menu-links a{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+.menu-links a:hover{
+    color: aqua;
+}
+
+/* Telas até 768px — tablets e pequenos laptops */
+@media (max-width: 768px) {
+    .pessoas {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 30px;
+    }
+  
+    .pessoa {
+      width: 45%;
+      padding: 30px;
+    }
+  
+    .secao-principal h1 {
+      font-size: 3em;
+    }
+  
+    .menu-links ul {
+      gap: 20px;
+    }
+  }
+  
+  /* Telas até 600px — celulares padrão */
+  @media (max-width: 600px) {
+
+    .pessoas {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+  
+    .pessoa {
+      width: 90%;
+      padding: 25px;
+    }
+  
+    .secao-principal h1 {
+      font-size: 2.2em;
+    }
+  
+    .menu-links ul {  
+      display: none;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .abrir .menu-links ul{
+        display: flex;
+    }
+  
+    .menu {
+      top: 10px;
+      left: 10px;
+    }
+  }
+  
+  /* Telas até 480px — celulares pequenos */
+  @media (max-width: 480px) {
+    .secao-principal h1 {
+      font-size: 1.8em;
+    }
+  
+    .pessoa h2 {
+      font-size: 1.4em;
+    }
+  
+    .pessoa p {
+      font-size: 1em;
+    }
+  
+    .btn {
+      padding: 8px 16px;
+      font-size: 0.9em;
+    }
+  }
+  
+  /* Telas até 300px — celulares muito pequenos */
+  @media (max-width: 300px) {
+    .secao-principal h1 {
+      font-size: 1.5em;
+    }
+  
+    .pessoa {
+      padding: 20px;
+    }
+  
+    .menu i {
+      width: 16px;
+      height: 16px;
+    }
+  
+    .btn {
+      padding: 6px 12px;
+      font-size: 0.8em;
+    }
+  }
+
+
